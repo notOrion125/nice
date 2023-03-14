@@ -39,19 +39,6 @@
       "SecondExpensesKPI": 100,
       "nick": "qwe",
       "password": "111"
-    },
-    {
-      "Id": 2,
-      "Name": "Никитос",
-      "SecondName": "Крылов",
-      "Branch": "Шумерля",
-      "Post": "Руководиель руководителей",
-      "Unit": "Мир",
-      "File": "https://sun9-32.userapi.com/impg/3RMSGuNhY7YeaIwMWVnwB1BP_0cUdM9g3ibLOg/ogJKHzb_uSU.jpg?size=374x374&quality=96&sign=d56120bb2b9387d10db9a14875d70c84&c_uniq_tag=l8lvwRFtkESpRKA2ffLIGLALI4bDqAdFKno6LGTqJk8&type=album",
-      "FirstExpensesKPI": 90,
-      "SecondExpensesKPI": 100,
-      "nick": "qwe",
-      "password": "111"
     }
   ]
   
