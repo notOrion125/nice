@@ -1,21 +1,11 @@
 import React from "react";
-import {
-  CTable,
-  CTableHead,
-  CTableRow,
-  CTableHeaderCell,
-  CTableDataCell,
-  CTableBody,
-  CButton,
-} from "@coreui/react";
-import CIcon from '@coreui/icons-react';
-import { cilTrash } from '@coreui/icons';
+import { CTable, CTableHead, CTableRow, CTableHeaderCell, CTableDataCell, CTableBody } from "@coreui/react";
 import '../BorderedTable.css';
 
-function Table({ tasks, handleEdit, handleDelete }) {
+function Table({ tasks, handleEdit }) {
   return (
     <CTable className="table table-hover" >
-      <CTableHead color="info">
+      <CTableHead color="info" className="bordered-table">
         <CTableRow>
           <CTableHeaderCell>Партнер</CTableHeaderCell>
           <CTableHeaderCell>Подзадача</CTableHeaderCell>
@@ -28,7 +18,6 @@ function Table({ tasks, handleEdit, handleDelete }) {
           <CTableHeaderCell>Оценка времени</CTableHeaderCell>
           <CTableHeaderCell>Описание работы</CTableHeaderCell>
           <CTableHeaderCell>Списано времени</CTableHeaderCell>
-          <CTableHeaderCell></CTableHeaderCell>
         </CTableRow>
       </CTableHead>
       <CTableBody >
@@ -45,11 +34,6 @@ function Table({ tasks, handleEdit, handleDelete }) {
             <CTableDataCell onClick={() => handleEdit(index)}>{task.timeestimation}</CTableDataCell>
             <CTableDataCell onClick={() => handleEdit(index)}>{task.jobdescription}</CTableDataCell>
             <CTableDataCell onClick={() => handleEdit(index)}>{task.timewrittenoff}</CTableDataCell>
-            <CTableDataCell>
-              <CButton color="light"  onClick={() => handleDelete(index)}>
-                <CIcon icon={cilTrash} size='custom-size' />
-              </CButton>
-            </CTableDataCell>
           </CTableRow>
         ))}
       </CTableBody>

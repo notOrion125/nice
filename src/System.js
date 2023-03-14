@@ -6,7 +6,7 @@ import Registration from "./components/Registration";
 import Chart from "./components/serega";
 // import Table from "./components/sanya";
 import Exit from "./components/Exit";
-import NewTable from "./NewTable";
+import NewTable from "./components/Table/App"
 import Information from './components/Information.json'
 const System = () => {
   // const passwords = Information.Information
