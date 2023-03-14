@@ -1,23 +1,5 @@
 import './Head.css'
 function Activity(props) {
-
-  // const CurrentActivities = [
-  //   {
-  //     Id:0,
-  //     CountOpen: '15',
-  //     CountOverdue: '14',
-  //   },
-  //   {
-  //     Id:1,
-  //     CountOpen: '3',
-  //     CountOverdue: '8',
-  //   },
-  //   {
-  //     Id:2,
-  //     CountOpen: '30',
-  //     CountOverdue: '40',
-  //   },
-  // ]
   
 
   return (

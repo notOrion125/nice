@@ -5,18 +5,14 @@ const Protect = (props) => {
     const [inputHard, setinputHard] = useState('')
     const [ShowHard, setShowHard] = useState(true)
     const [inputPass, setinputPass] = useState('')
-    // const [inputLogin, setinputLogin] = useState('')
     const [showHTML, setShowHTML] = useState(false);
     const [showText, setShowText] = useState(false);
     const saveinputPass = () => {
         setinputPass(document.getElementById('inputPass').value)
         setShowHTML(document.getElementById('inputPass').value === props.password[inputHard].password && document.getElementById('inputNick').value === props.password[inputHard].nick)
-        
+
     };
     console.log(props.password)
-    // const saveinputLogin = () => {
-    //     setinputLogin(document.getElementById('inputLogin').value)
-    // };
 
 
 
@@ -26,6 +22,9 @@ const Protect = (props) => {
         console.log(inputHard)
     };
 
+    const saveShowHard = () => {
+        setShowHard(true);
+    };
     const notTrue = () => {
         setShowText(true);
     };
@@ -50,12 +49,17 @@ const Protect = (props) => {
                     <CFormInput type="password" size="lg" placeholder='Пароль' onChange={saveinputPass} id='inputPass' aria-label="default input example" />
                     <p></p>
                     {!showHTML && (
+                <div>
+                <CButton className="mb-3" color="secondary" onClick={saveShowHard} >Назад</CButton>
+                <CButton className="mb-3" color="primary" onClick={notTrue} >Подтвердить</CButton>
+            </div>
+                    )}  
+                         {/* <CButton color="secondary" onClick={notTrue} >Подтвердить</CButton> )} */}
 
-                        <CButton color="secondary" onClick={notTrue} >Подтвердить</CButton>)}
                     {showHTML && (
                         <CButton color="primary" onClick={props.SavePass} >Подтвердить</CButton>
-                        )}
-                        
+                    )}
+
                     {showText && <p style={{ color: 'red' }}>Неверный пароль!!</p>}
                 </div>
             )}
