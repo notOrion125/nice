@@ -1,0 +1,67 @@
+[
+    {
+        "parther": "GGsel",
+        "subtask": "Подзадача",
+        "subtaskStatus": "В работе",
+        "tasks": "Задача",
+        "stage": "Работаем над этим",
+        "project": "проект",
+        "startdate": "2022-01-01",
+        "enddate": "2022-01-15",
+        "timeestimation": 40,
+        "jobdescription": "Сделать работу",
+        "timewrittenoff": 10
+    },
+    {
+        "parther": "Intem Lab",
+        "subtask": "Подзадача",
+        "subtaskStatus": "В работе",
+        "tasks": "Проект",
+        "stage": "Поработали",
+        "project": "проект",
+        "startdate": "2022-01-01",
+        "enddate": "2022-01-15",
+        "timeestimation": 60,
+        "jobdescription": "Сделать работу",
+        "timewrittenoff": 8
+    },
+    {
+        "parther": "Intem Lab",
+        "subtask": "Подзадача",
+        "subtaskStatus": "В работе",
+        "tasks": "Test",
+        "stage": "Поработали",
+        "project": "проект",
+        "startdate": "2022-01-01",
+        "enddate": "2022-08-20",
+        "timeestimation": 60,
+        "jobdescription": "Сделать работу",
+        "timewrittenoff": 8
+    },
+    {
+        "parther": "Intem Lab",
+        "subtask": "Подзадача",
+        "subtaskStatus": "В работе",
+        "tasks": "Parracet",
+        "stage": "Поработали",
+        "project": "проект",
+        "startdate": "2022-01-01",
+        "enddate": "2022-01-20",
+        "timeestimation": 60,
+        "jobdescription": "Сделать работу",
+        "timewrittenoff": 8
+    },
+    {
+        "parther": "Intem Lab",
+        "subtask": "Подзадача",
+        "subtaskStatus": "В работе",
+        "tasks": "Что-то",
+        "stage": "Поработали",
+        "project": "проект",
+        "startdate": "2022-01-1",
+        "enddate": "2022-02-15",
+        "timeestimation": 60,
+        "jobdescription": "Сделать работу",
+        "timewrittenoff": 8
+    }
+]
