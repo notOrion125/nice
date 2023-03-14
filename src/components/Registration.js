@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 import '@coreui/coreui/dist/css/coreui.min.css'
-// import Information from './Information.json'
 import { CModal, CButton, CModalHeader, CModalTitle, CModalBody, CModalFooter, CFormInput, } from '@coreui/react'
 
 function Registration(props) {
   const [visible, setVisible] = useState(false)
   const [Twovisible, setTwoVisible] = useState(false)
   const [FirstLogin, setFirstlogin] = useState(props.Information)
-  // console.log(FirstLogin)
+
   props.SaveInfo(FirstLogin)
-  // console.log(FirstLogin.length)
+
 
   const [Id, setId] = useState(props.Information.length)
   const [SecondName, setSecondName] = useState('')
@@ -58,13 +57,10 @@ function Registration(props) {
   };
   const expenses =
     { Id, Name, SecondName, Branch, Post, Unit, File, FirstExpensesKPI, SecondExpensesKPI, nick, password }
-  // console.log(expenses)
-  // const [Lenght, setLenght] = useState(FirstLogin.length)
-  // const [Spisok, setSpisok] = useState(FirstLogin)
+
 
   const AddSpisok = (item) => {
     setFirstlogin([...FirstLogin, item])
-    // console.log(FirstLogin)
   }
   // const FormBody = (label, qq) => {
   //   return (

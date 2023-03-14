@@ -3,13 +3,12 @@ import Protect from "./components/Protect";
 import React, { useState } from 'react';
 import './components/system.css'
 import Registration from "./components/Registration";
-import Chart from "./components/serega";
-// import Table from "./components/sanya";
+import Chart from "./components/Chart";
 import Exit from "./components/Exit";
 import NewTable from "./components/Table/App"
 import Information from './components/Information.json'
 const System = () => {
-  // const passwords = Information.Information
+
 
 
   const [newCountOpen, setnewCountOpen] = useState('')
@@ -20,15 +19,12 @@ const System = () => {
   const [Protection, setProtection] = useState(true)
   const SaveInfo = (ququ) => {
     setInfo(ququ)
-    // console.log(Info)
   };
   const SavesetnewCountOpen = (ruru) => {
     setnewCountOpen(ruru)
-    // console.log(newCountOpen)
   };
   const SavesetnewCountOverdue = (tutu) => {
     setnewCountOverdue(tutu)
-    // console.log(newCountOverdue)
   };
   const SaveProtection = () => {
     setProtection(false)
@@ -37,11 +33,9 @@ const System = () => {
     setProtection(true)
   };
   const SavesetNewInputLogin = (event) => {
-    // setNewInputLogin(document.getElementById('inputLogin').value)
     setNewInputLogin(event.target.value)
   };
   const SavesetNewInputNick = (event) => {
-    // setNewInputNick(document.getElementById('inputNick').value)
     setNewInputNick(event.target.value)
     console.log(NewInputNick)
   };
