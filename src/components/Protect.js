@@ -4,11 +4,9 @@ import React, { useState } from 'react';
 const Protect = (props) => {
     const [inputHard, setinputHard] = useState('')
     const [ShowHard, setShowHard] = useState(true)
-    // const [inputPass, setinputPass] = useState('')
     const [showHTML, setShowHTML] = useState(false);
     const [showText, setShowText] = useState(false);
     const saveinputPass = () => {
-        // setinputPass(document.getElementById('inputPass').value)
         setShowHTML(document.getElementById('inputPass').value === props.password[inputHard].password && document.getElementById('inputNick').value === props.password[inputHard].nick)
 
     };
