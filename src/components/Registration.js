@@ -113,7 +113,7 @@ function Registration(props) {
             <CModalHeader onClose={() => setTwoVisible(false)}>
               <CModalTitle>Ваш Id, который будет использоваться для входа: {Id}</CModalTitle>
             </CModalHeader>
-            <CModalBody>Вы точно запомнили ваш Id?()</CModalBody>
+            <CModalBody>Вы точно запомнили ваш Id?</CModalBody>
             <CModalFooter>
 
               <CButton color="secondary" onClick={() => setTwoVisible(false)}>

@@ -2,8 +2,6 @@ import "./Head.css"
 import { CChart } from '@coreui/react-chartjs'
 function Progress(props) {
 
-    // const OneKPI = {props.KPIS[0].NewOneKPI}
-    // const TwoKPI = 70
 
     return (
         <div>
@@ -13,7 +11,6 @@ function Progress(props) {
                 <CChart
                     type="doughnut"
                     data={{
-                        // labels: ['13','Note'],
                         datasets: [
                             {
                                 backgroundColor: ['#00D8FF','#000000'],

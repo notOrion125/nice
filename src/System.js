@@ -69,7 +69,6 @@ const System = () => {
       <h1>  Таблица</h1>
       <hr></hr>
       <NewTable SavesetnewCountOpen={SavesetnewCountOpen} SavesetnewCountOverdue={SavesetnewCountOverdue}/>
-      {/* <Table SavesetnewCountOpen={SavesetnewCountOpen} SavesetnewCountOverdue={SavesetnewCountOverdue}/> */}
       <h1>Диаграмма</h1>
       <hr></hr>
       <Chart />
