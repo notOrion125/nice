@@ -13,8 +13,8 @@ function Progress(props) {
                     data={{
                         datasets: [
                             {
-                                backgroundColor: ['#00D8FF','#000000'],
-                                data: [props.KPIS[0].NewOneKPI, 100-props.KPIS[0].NewOneKPI],
+                                backgroundColor: ['#00D8FF', '#000000'],
+                                data: [props.KPIS[0].NewOneKPI, 100 - props.KPIS[0].NewOneKPI],
                                 radius: 40,
                                 weight: 5
 
@@ -29,11 +29,10 @@ function Progress(props) {
                 <CChart
                     type="doughnut"
                     data={{
-                        // labels: ['13','Note'],
                         datasets: [
                             {
-                                backgroundColor: ['#00D8FF','#000000'],
-                                data: [props.KPIS[0].NewTwoKPI, 100-props.KPIS[0].NewTwoKPI],
+                                backgroundColor: ['#00D8FF', '#000000'],
+                                data: [props.KPIS[0].NewTwoKPI, 100 - props.KPIS[0].NewTwoKPI],
                                 radius: 40
 
                             },

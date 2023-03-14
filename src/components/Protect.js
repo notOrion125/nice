@@ -47,12 +47,11 @@ const Protect = (props) => {
                     <CFormInput type="password" size="lg" placeholder='Пароль' onChange={saveinputPass} id='inputPass' aria-label="default input example" />
                     <p></p>
                     {!showHTML && (
-                <div>
-                <CButton className="mb-3" color="secondary" onClick={saveShowHard} >Назад</CButton>
-                <CButton className="mb-3" color="primary" onClick={notTrue} >Подтвердить</CButton>
-            </div>
-                    )}  
-                         {/* <CButton color="secondary" onClick={notTrue} >Подтвердить</CButton> )} */}
+                        <div>
+                            <CButton className="mb-3" color="secondary" onClick={saveShowHard} >Назад</CButton>
+                            <CButton className="mb-3" color="primary" onClick={notTrue} >Подтвердить</CButton>
+                        </div>
+                    )}
 
                     {showHTML && (
                         <CButton color="primary" onClick={props.SavePass} >Подтвердить</CButton>
