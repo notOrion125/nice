@@ -10,7 +10,7 @@ function Registration(props) {
   // console.log(FirstLogin)
   props.SaveInfo(FirstLogin)
   // console.log(FirstLogin.length)
-  
+
   const [Id, setId] = useState(props.Information.length)
   const [SecondName, setSecondName] = useState('')
   const [Name, setName] = useState('')
@@ -29,7 +29,7 @@ function Registration(props) {
     setName(document.getElementById('Name').value)
   };
   const saveId = () => {
-    setId(Id+1)
+    setId(Id + 1)
   };
   const saveBranch = () => {
     setBranch(document.getElementById('Branch').value)
@@ -56,48 +56,60 @@ function Registration(props) {
   const saveLogin = () => {
     setLogin(document.getElementById('Login').value)
   };
-  const expenses = 
-    { Id, Name, SecondName, Branch, Post, Unit, File, FirstExpensesKPI, SecondExpensesKPI, nick, password  }
+  const expenses =
+    { Id, Name, SecondName, Branch, Post, Unit, File, FirstExpensesKPI, SecondExpensesKPI, nick, password }
   // console.log(expenses)
   // const [Lenght, setLenght] = useState(FirstLogin.length)
   // const [Spisok, setSpisok] = useState(FirstLogin)
-  
-  const AddSpisok = (item) =>{
+
+  const AddSpisok = (item) => {
     setFirstlogin([...FirstLogin, item])
     // console.log(FirstLogin)
   }
+  // const FormBody = (label, qq) => {
+  //   return (
+  //     <CModalBody>{label}<CFormInput
+  //       type="text" 
+  //       id={qq}
+  //       placeholder='' 
+  //       defaultValue=''
+  //       aria-label="default input example" 
+  //       /></CModalBody>
+  //   )
+  // }
   return (
     <div >
       <div >
 
 
-          <CButton  shape="rounded-pill" onClick={() => {setVisible(!visible); props.notSaveProtection()}}>Регистрация</CButton>
+        <CButton shape="rounded-pill" onClick={() => { setVisible(!visible); props.notSaveProtection() }}>Регистрация</CButton>
 
-          <CModal visible={visible} onClose={() => setVisible(false)}>
-            <CModalHeader onClose={() => setVisible(false)}>
-              <CModalTitle>Ваш Id: {Id}</CModalTitle>
-            </CModalHeader>
-            <CModalBody>Введите вашу фамилию:<CFormInput type="text" id='SecondName' placeholder='' defaultValue={''} aria-label="default input example" /></CModalBody>
-            <CModalBody>Введите ваше имя:<CFormInput type="text" id='Name'  placeholder='' defaultValue={''} aria-label="default input example" /></CModalBody>
-            <CModalBody>Введите ваш филиал:<CFormInput type="text" id='Branch' defaultValue={''} aria-label="default input example" /></CModalBody>
-            <CModalBody>Введите вашу должность:<CFormInput type="text" id='Post' placeholder='' defaultValue={''} aria-label="default input example" /></CModalBody>
-            <CModalBody>Введите ваше подразделение:<CFormInput type="text" id='Unit' placeholder='' defaultValue={''} aria-label="default input example" /></CModalBody>
-            <CModalBody>Введите ваш KPI за 3 месяца:<CFormInput type="text" id='OneKPI' placeholder='' defaultValue={''} aria-label="default input example" /></CModalBody>
-            <CModalBody>Введите ваш KPI за полугодие:<CFormInput type="text" id='TwoKPI' placeholder='' defaultValue={''} aria-label="default input example" /></CModalBody>
-            <CModalBody>Ссылка на картинку:<CFormInput type="text" id='File' placeholder='' defaultValue={''} aria-label="default input example" /></CModalBody>
-            <CModalBody>Придумайте логин:<CFormInput type="text" id='Login' placeholder='' defaultValue={''} aria-label="default input example" /></CModalBody>
-            <CModalBody>Придумайте пароль:<CFormInput type="text" id='Password' placeholder='' defaultValue={''} aria-label="default input example" /></CModalBody>
-            <CModalFooter>
+        <CModal visible={visible} onClose={() => setVisible(false)}>
+          <CModalHeader onClose={() => setVisible(false)}>
+            <CModalTitle>Ваш Id: {Id}</CModalTitle>
+          </CModalHeader>
+          {/* <FormBody id='SecondName' label='Введите вашу фамилию' /> */}
+          <CModalBody>Введите вашу фамилию:<CFormInput type="text" id='SecondName' placeholder='' defaultValue={''} aria-label="default input example" /></CModalBody>
+          <CModalBody>Введите ваше имя:<CFormInput type="text" id='Name' placeholder='' defaultValue={''} aria-label="default input example" /></CModalBody>
+          <CModalBody>Введите ваш филиал:<CFormInput type="text" id='Branch' defaultValue={''} aria-label="default input example" /></CModalBody>
+          <CModalBody>Введите вашу должность:<CFormInput type="text" id='Post' placeholder='' defaultValue={''} aria-label="default input example" /></CModalBody>
+          <CModalBody>Введите ваше подразделение:<CFormInput type="text" id='Unit' placeholder='' defaultValue={''} aria-label="default input example" /></CModalBody>
+          <CModalBody>Введите ваш KPI за 3 месяца:<CFormInput type="text" id='OneKPI' placeholder='' defaultValue={''} aria-label="default input example" /></CModalBody>
+          <CModalBody>Введите ваш KPI за полугодие:<CFormInput type="text" id='TwoKPI' placeholder='' defaultValue={''} aria-label="default input example" /></CModalBody>
+          <CModalBody>Ссылка на картинку:<CFormInput type="text" id='File' placeholder='' defaultValue={''} aria-label="default input example" /></CModalBody>
+          <CModalBody>Придумайте логин:<CFormInput type="text" id='Login' placeholder='' defaultValue={''} aria-label="default input example" /></CModalBody>
+          <CModalBody>Придумайте пароль:<CFormInput type="text" id='Password' placeholder='' defaultValue={''} aria-label="default input example" /></CModalBody>
+          <CModalFooter>
 
-              <CButton color="secondary" onClick={() => setVisible(false)}>
-                Закрыть
-              </CButton>
-              <CButton color="primary" onClick={() =>  {setTwoVisible(true);setVisible(false); saveLogin();savePassword();saveOneKPI();saveTwoKPI();saveSecondName();saveFile();saveName();saveBranch();savePost();saveUnit(); saveOneKPI(); saveTwoKPI();}}>Подтвердить</CButton>
-              </CModalFooter> 
-          </CModal>
-          <div/>
-              <div>
-              <CModal visible={Twovisible} onClose={() => setTwoVisible(false)}>
+            <CButton color="secondary" onClick={() => setVisible(false)}>
+              Закрыть
+            </CButton>
+            <CButton color="primary" onClick={() => { setTwoVisible(true); setVisible(false); saveLogin(); savePassword(); saveOneKPI(); saveTwoKPI(); saveSecondName(); saveFile(); saveName(); saveBranch(); savePost(); saveUnit(); saveOneKPI(); saveTwoKPI(); }}>Подтвердить</CButton>
+          </CModalFooter>
+        </CModal>
+        <div />
+        <div>
+          <CModal visible={Twovisible} onClose={() => setTwoVisible(false)}>
             <CModalHeader onClose={() => setTwoVisible(false)}>
               <CModalTitle>Ваш Id, который будет использоваться для входа: {Id}</CModalTitle>
             </CModalHeader>
@@ -107,19 +119,19 @@ function Registration(props) {
               <CButton color="secondary" onClick={() => setTwoVisible(false)}>
                 Закрыть
               </CButton>
-              <CButton color="primary" onClick={() =>  {saveId();setVisible(false);setTwoVisible(false);AddSpisok(expenses)}}>Да</CButton>              
-              </CModalFooter> 
+              <CButton color="primary" onClick={() => { saveId(); setVisible(false); setTwoVisible(false); AddSpisok(expenses) }}>Да</CButton>
+            </CModalFooter>
           </CModal>
-              
-              
-              </div>
-              
+
+
+        </div>
 
 
 
-          </div>
+
+      </div>
     </div>
 
   );
-    }
+}
 export default Registration
