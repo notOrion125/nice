@@ -1,19 +1,16 @@
 import React from "react";
-import {
-    CButton,
-    CForm,
-    CFormInput,
-    CModal,
-    CModalBody,
-    CModalHeader,
-    CModalTitle,
-    CRow,
-    CCol,
-    CFormSelect
-} from "@coreui/react";
+import { CButton,CForm,CFormInput,CModal,CModalBody,CModalHeader,CModalTitle,CRow,CCol,CFormSelect } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
+import CIcon from '@coreui/icons-react';
+import { cilTrash } from '@coreui/icons';
 
-function Modal({ visible, handleCancel, handleSave, editableTask, tasks, handleDelete }) {
+function Modal({ visible, handleCancel, handleSave, editableTask, tasks, setTasks }) {
+
+    const handleDelete = (index) => {
+        const updatedTasks = tasks.filter((task, taskIndex) => taskIndex !== index);
+        setTasks(updatedTasks);
+    };
+
     return (
         <CModal visible={visible} onClose={handleCancel}>
             <CModalHeader onClose={handleCancel}>
@@ -148,11 +145,16 @@ function Modal({ visible, handleCancel, handleSave, editableTask, tasks, handleD
                         <p></p>
                         <p></p>
                         <div className="d-grid gap-2 d-md-flex justify-content-md-end">
+                            {editableTask !== null && (
+                                <CButton color="danger"  onClick={() => {handleDelete(editableTask);handleCancel()}}>
+                                <CIcon icon={cilTrash} size='custom-size' />
+                              </CButton>
+                            )}
                             <CButton color="secondary" onClick={handleCancel}>Отмена</CButton>
                             <CButton type="submit" color="primary">Сохранить</CButton>
                         </div>
                     </CRow>
-                </CForm> 
+                </CForm>
             </CModalBody>
         </CModal>
     );
