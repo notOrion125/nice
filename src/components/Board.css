@@ -1,0 +1,10 @@
+@property --p{
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+  }
+  
+
+  /* body {
+    background:#ddd;
+  } */

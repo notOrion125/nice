@@ -1,0 +1,58 @@
+.layer1{
+    font-size: 20px;
+	line-height: 15px;
+
+}
+.Basic{
+    padding: 20px 30px;
+    /* background-color: aqua; */
+}
+
+.Table{
+    padding: 20px 30px;
+
+}
+
+.two {
+    float:left; 
+    width:50%;
+    padding: 10px 0px;
+
+}
+
+.first {
+    width:50%; 
+    float:left;
+    padding: 10px 0px;
+
+}
+.second {
+    width:80%; 
+    float:left;
+    padding: 0px 20px;
+
+}
+.third {
+    width:40%; 
+    float:left;
+
+}
+.fourth {
+    width:60%; 
+    float:left;
+
+}
+.buttons {
+    float:left;
+    margin:100px;
+
+}
+.oneProgress{
+    width:50%; 
+    float:left;
+}
+.twoProgress{
+    width:50%; 
+    float:left;
+}
+

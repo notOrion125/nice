@@ -1,0 +1,45 @@
+{
+" ": [
+   
+    {
+      "Id": 0,
+      "Name": "Антон",
+      "SecondName": "Вильсон",
+      "Branch": "Чебоксары(02)",
+      "Post": "zРазработчик K2.2 (22)",
+      "Unit": "Департамент разработки программного обеспечения(08)",
+      "File": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO-hRd7iD03o8dLGzp4g8I3QE4BR-nbCyJ2_NOezw&s",
+      "FirstExpensesKPI": 40,
+      "SecondExpensesKPI": 50,
+      "nick": "login",
+      "password": "123"
+    },
+    {
+      "Id": 1,
+      "Name": "Олегсандр",
+      "SecondName": "Михайлов",
+      "Branch": "Чебоксары(02)",
+      "Post": "zРазработчик K2.2 (22)",
+      "Unit": "Департамент разработки ПО(08)",
+      "File": "https://www.m24.ru/b/d/nBkSUhL2hFIvns--JL6BrNOp2Z318Ji-mifCm-WR9mOBdDebBizCnTY8qdJf6ReJ58vU9meMMok3Ee2nhSR6ISeO9G1N_wjJ=1rvPWcIj8uj6TKcUEXWwgQ.jpg",
+      "FirstExpensesKPI": 15,
+      "SecondExpensesKPI": 20,
+      "nick": "admin",
+      "password": "321"
+    },
+    {
+      "Id": 2,
+      "Name": "Никитос",
+      "SecondName": "Крылов",
+      "Branch": "Шумерля",
+      "Post": "Руководиель руководителей",
+      "Unit": "Мир",
+      "File": "https://sun9-32.userapi.com/impg/3RMSGuNhY7YeaIwMWVnwB1BP_0cUdM9g3ibLOg/ogJKHzb_uSU.jpg?size=374x374&quality=96&sign=d56120bb2b9387d10db9a14875d70c84&c_uniq_tag=l8lvwRFtkESpRKA2ffLIGLALI4bDqAdFKno6LGTqJk8&type=album",
+      "FirstExpensesKPI": 90,
+      "SecondExpensesKPI": 100,
+      "nick": "qwe",
+      "password": "111"
+    }
+  ]
+  
+}
