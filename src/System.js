@@ -44,11 +44,11 @@ const System = () => {
 
   return (
 
-    <div>
+    <div >
       {Protection && (
-        <div>
+        <div> 
           <Registration notSaveProtection={notSaveProtection} SaveProtection={SaveProtection} Information={Info} SaveInfo={SaveInfo}/>
-        <div className="protect">
+        <div className="protect" >
 
           <Protect SavePass={SaveProtection} password={Info}  NewInputLogin={NewInputLogin} SavesetNewInputNick={SavesetNewInputNick} SavesetNewInputLogin={SavesetNewInputLogin} />
         </div>
@@ -57,13 +57,15 @@ const System = () => {
 
     
       {!Protection && (
-        <div>
+        <div >
       <Exit notSaveProtection={notSaveProtection}/>
+      <h1 className="pad">Профиль</h1>
+      <hr></hr>
       <Data NewInputLogin={NewInputLogin} newCountOpen={newCountOpen} newCountOverdue={newCountOverdue} Info={Info}/>
-      <h1>  Таблица</h1>
+      <h1 className="pad">Таблица</h1>
       <hr></hr>
       <NewTable SavesetnewCountOpen={SavesetnewCountOpen} SavesetnewCountOverdue={SavesetnewCountOverdue}/>
-      <h1>Диаграмма</h1>
+      <h1 className="pad">Диаграмма</h1>
       <hr></hr>
       <Chart />
       </div>

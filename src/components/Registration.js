@@ -73,7 +73,8 @@ function Registration(props) {
   //   )
   // }
   return (
-      <div >
+      <div className="leftter" >
+
         <CButton shape="rounded-pill" onClick={() => { setVisible(!visible); props.notSaveProtection() }}>Регистрация</CButton>
         <CModal visible={visible} onClose={() => setVisible(false)}>
           <CModalHeader onClose={() => setVisible(false)}>

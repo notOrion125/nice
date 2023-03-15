@@ -5,19 +5,12 @@ import Progress from './components/Progress';
 import './components/Board.css'
 import { useState } from 'react';
 
-
-import Information from './components/Information.json'
-
-
 const Data = (props) => {
-  // const ExpensesKPI = Information.Information
-
 
   const [NewOneKPI, setNewOneKPI] = useState(props.Info[props.NewInputLogin].FirstExpensesKPI)
   const [NewTwoKPI, setNewTwoKPI] = useState(props.Info[props.NewInputLogin].SecondExpensesKPI)
   const [NewLenght, setNewLenght] = useState()
   const [NewSpisok, setNewSpisok] = useState()
-
 
   const saveNewLenght = (childLenhgt) => {
     setNewLenght(childLenhgt)
@@ -35,7 +28,6 @@ const Data = (props) => {
     setNewTwoKPI(document.getElementById('TwoKPI').value)
     console.log(NewTwoKPI)
   };
-  // console.log("Vor", props.Info)
 
   const KPIS = [
     { NewOneKPI, NewTwoKPI }]
