@@ -6,10 +6,6 @@ function Registration(props) {
   const [visible, setVisible] = useState(false)
   const [Twovisible, setTwoVisible] = useState(false)
   const [FirstLogin, setFirstlogin] = useState(props.Information)
-
-  props.SaveInfo(FirstLogin)
-
-
   const [Id, setId] = useState(props.Information.length)
   const [SecondName, setSecondName] = useState('')
   const [Name, setName] = useState('')
@@ -21,6 +17,8 @@ function Registration(props) {
   const [nick, setLogin] = useState('')
   const [FirstExpensesKPI, setOneKPI] = useState('')
   const [SecondExpensesKPI, setTwoKPI] = useState('')
+
+  props.SaveInfo(FirstLogin)
   const saveSecondName = () => {
     setSecondName(document.getElementById('SecondName').value)
   };
@@ -64,7 +62,8 @@ function Registration(props) {
   }
   // const FormBody = (label, qq) => {
   //   return (
-  //     <CModalBody>{label}<CFormInput
+  //     <CModalBody>{label}
+  //     <CFormInput
   //       type="text" 
   //       id={qq}
   //       placeholder='' 
@@ -74,17 +73,14 @@ function Registration(props) {
   //   )
   // }
   return (
-    <div >
-      <div >
-
+      <div className="leftter" >
 
         <CButton shape="rounded-pill" onClick={() => { setVisible(!visible); props.notSaveProtection() }}>Регистрация</CButton>
-
         <CModal visible={visible} onClose={() => setVisible(false)}>
           <CModalHeader onClose={() => setVisible(false)}>
             <CModalTitle>Ваш Id: {Id}</CModalTitle>
           </CModalHeader>
-          {/* <FormBody id='SecondName' label='Введите вашу фамилию' /> */}
+          {/* <FormBody qq='SecondName' label='Введите вашу фамилию' /> */}
           <CModalBody>Введите вашу фамилию:<CFormInput type="text" id='SecondName' placeholder='' defaultValue={''} aria-label="default input example" /></CModalBody>
           <CModalBody>Введите ваше имя:<CFormInput type="text" id='Name' placeholder='' defaultValue={''} aria-label="default input example" /></CModalBody>
           <CModalBody>Введите ваш филиал:<CFormInput type="text" id='Branch' defaultValue={''} aria-label="default input example" /></CModalBody>
@@ -118,16 +114,8 @@ function Registration(props) {
               <CButton color="primary" onClick={() => { saveId(); setVisible(false); setTwoVisible(false); AddSpisok(expenses) }}>Да</CButton>
             </CModalFooter>
           </CModal>
-
-
         </div>
-
-
-
-
       </div>
-    </div>
-
   );
 }
 export default Registration

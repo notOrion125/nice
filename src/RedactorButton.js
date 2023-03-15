@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '@coreui/coreui/dist/css/coreui.min.css'
+import './components/system.css'
 
 import { CModal, CButton, CModalHeader, CModalTitle, CModalBody, CModalFooter, CFormInput, } from '@coreui/react'
 function RedactorButton(props) {
@@ -32,6 +33,7 @@ const saveThreeVisible = () => {
   return (
     <div >
       <div className="d-grid gap-2 d-md-flex justify-content-md-end">
+
 
         <>
           <CButton color="primary" className="me-md-2" onClick={() => setTwoVisible(!twovisible)}>Загрузить фотографию</CButton>
