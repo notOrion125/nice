@@ -1,7 +1,8 @@
 {
 "Information": [
-   
+   [
     {
+      
       "Id": 0,
       "Name": "Антон",
       "SecondName": "Вильсон",
@@ -16,12 +17,12 @@
     },
     {
       "Id": 1,
-      "Name": "Олегсандр",
-      "SecondName": "Михайлов",
+      "Name": "Олег",
+      "SecondName": "Грецкий",
       "Branch": "Чебоксары(02)",
       "Post": "zРазработчик K2.2 (22)",
       "Unit": "Департамент разработки ПО(08)",
-      "File": "https://www.m24.ru/b/d/nBkSUhL2hFIvns--JL6BrNOp2Z318Ji-mifCm-WR9mOBdDebBizCnTY8qdJf6ReJ58vU9meMMok3Ee2nhSR6ISeO9G1N_wjJ=1rvPWcIj8uj6TKcUEXWwgQ.jpg",
+      "File": "https://s0.rbk.ru/v6_top_pics/media/img/8/08/756681805319088.jpg",
       "FirstExpensesKPI": 15,
       "SecondExpensesKPI": 20,
       "nick": "admin",
@@ -41,5 +42,6 @@
       "password": "111"
     }
   ]
+]
   
 }
