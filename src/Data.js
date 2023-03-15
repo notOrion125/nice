@@ -1,5 +1,5 @@
 import './components/Head.css'
-import Expenses from './Expenses';
+import Expenses from './Head';
 import Activity from './components/Activity';
 import Progress from './components/Progress';
 import './components/Board.css'
